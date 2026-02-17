@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# 🚀 Project Camp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Task Management Web Application built using the IMERN stack (MongoDB, Express, React, Node.js) with secure authentication and email verification.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 Overview
 
-### `npm start`
+Project Camp is a task management platform where users can securely register, verify their email, and manage their daily tasks efficiently.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project demonstrates real-world full-stack architecture, authentication workflows, and deployment practices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- React.js
+- Axios
+- CSS
 
-### `npm run build`
+### Backend
+- Node.js
+- Express.js
+- JWT (JSON Web Tokens)
+- Bcrypt (Password Hashing)
+- Nodemailer (Email Verification)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Database
+- MongoDB (Atlas)
 
 ### Deployment
+- Frontend: Vercel / Netlify
+- Backend: Render / Railway
+- Database: MongoDB Atlas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## ✨ Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🔐 Authentication & Security
+- User Registration
+- Email Verification via secure token
+- JWT-based Login
+- Protected Routes
+- Password Encryption using Bcrypt
+- Environment-based configuration
+
+### 📋 Task Management
+- Create Tasks
+- Edit Tasks
+- Delete Tasks
+- Mark Tasks as Completed
+- User-specific Dashboard
+
+### ⚙️ Backend Architecture
+- RESTful API design
+- Middleware-based authentication
+- MVC structure
+- Proper error handling
+- CORS configuration
+
+---
+
+## 🔄 Email Verification Flow
+
+1. User registers  
+2. Verification email is sent  
+3. User clicks verification link  
+4. Account is activated  
+5. User can now login  
+
+---
+
+## ⚙️ Installation & Setup
+
+1️⃣ Clone Repository  
+git clone https://github.com/surajkengar/project_camp-frontend/ 
+cd project-camp  
+
+---
+
+2️⃣ Navigate to Backend Folder  
+cd backend
+
+---
+
+
+3️⃣ Install Dependencies  
+npm install  
+
+---
+
+4️⃣ Create .env File inside backend folder and add:
+
+PORT=8000  
+MONGO_URI=your_mongodb_connection_string  
+JWT_SECRET=your_jwt_secret  
+CLIENT_URL=http://localhost:3000  
+
+MAIL_HOST=your_smtp_host  
+MAIL_PORT=2525  
+MAIL_USER=your_smtp_user  
+MAIL_PASS=your_smtp_pass  
+
+---
+
+5️⃣ Start Backend Server  
+npm start
+
+---
+
+6️⃣ Navigate to Frontend Folder  
+cd ../frontend  
+
+---
+
+7️⃣ Install Dependencies  
+npm install 
+
+---
+
+8️⃣ Start Frontend  
+npm start 
+
+---
+
+Backend runs on: http://localhost:8000  
+Frontend runs on: http://localhost:3000  
+
+---
+
+
+
+
+
+
+
+
